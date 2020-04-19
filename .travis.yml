@@ -1,0 +1,3 @@
+before_script:
+  - psql --dbname=$DB_NAME --file=create-tables.sql
+  - psql --dbname=$DB_NAME --file=insert-data.sql
